@@ -4,32 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Style the header section with a gradient background and center the h1 */
+        #header {
+            background: linear-gradient(to right, #1880a7, #00bfff);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        #header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style the main content area with a white background */
+        #main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Highlight elements with the "important" class */
+        .important {
+            background-color: lightblue;
+            font-weight: bold;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* Style the quiz section with a lighter blue background */
+        #quiz-section {
+            background-color: #add8e6;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        #quiz-section h2 {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        #quiz-section img {
+            border: 5px solid purple;
+            width: 100px;
+            display: block;
+            margin-bottom: 10px;
+            margin: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #quiz-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #quiz-section label {
+            color: rgb(18, 18, 142);
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #quiz-section input[type="text"] {
+            border: 2px solid rgb(18, 18, 142);
+            border-radius: 5px;
+            padding: 5px;
+            width: 200px;
+            margin-top: 5px;
+        }
+
+        #quiz-section input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: rgb(18, 92, 142);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #quiz-section input[type="submit"]:hover {
+            background-color: rgb(79, 118, 143);
+        }
+
+        /* Style the species table */
+        #species-table {
+            margin: 20px;
+        }
+
+        #species-table table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        #species-table th,
+        #species-table td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #species-table tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        #species-table tr:first-child {
+            background-color: gray;
+            font-weight: bold;
+        }
+
+        /* Style the footer section */
+        #footer {
+            background-color: #165b89;
+            color: white;
+            text-align: center;
+            /* padding: 10px; */
+            border-radius: 15px;
+            margin: 20px;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+
+        #footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <div id="header">
         <h1>The Fascinating World of Octopuses</h1>
-        <p>Welcome to this intriguing corner of the internet!</p>
+        <p class="whiteP" style = "text-align: left; font-style: italic;">Welcome to this intriguing corner of the internet!</p>
     </div>
 
     <!-- Main Content -->
     <div id="main-content">
 
         <!-- Introduction -->
-        <h2>Introduction</h2>
+        <h2 style="text-transform: uppercase;">Introduction</h2>
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
         </p>
 
         <!-- Amazing Facts -->
-        <h3>Amazing Facts</h3>
+        <h3 style="text-transform: uppercase;">Amazing Facts</h3>
         <!-- Unordered list -->
         <ul>
-            <li>They have three hearts.</li>
-            <li>They can change color.</li>
-            <li>They are masters of camouflage.</li>
+            <li><p>They have three hearts.</p></li>
+            <li><p>They can change color.</p></li>
+            <li><p>They are masters of camouflage.</p></li>
         </ul>
 
         <!-- Anatomy -->
@@ -58,20 +200,15 @@
 
         <!-- Fun Experiment: Octopus Quiz -->
         <div id="quiz-section">
-
-            <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
-
-            <h2>Octopus Quiz</h2>
+            <div>
+                <h2>Octopus Quiz</h2>
+                <img src="octopus-image.png" alt="Image of an octopus">
+            </div>
             <form action="/submit-quiz" method="POST">
-                <!-- Question 1 -->
                 <label for="question1">How many hearts does an octopus have?</label>
-                <input type="text" id="question1" name="question1"><br>
-
-                <!-- Question 2 -->
-                <label for="question2">Can octopuses change color? (Yes/No)</label>
-                <input type="text" id="question2" name="question2"><br>
-
+                <input type="text" id="question1" name="question1">
+                <label for="question2" style="margin-top: 20px;">Can octopuses change color? (Yes/No)</label>
+                <input type="text" id="question2" name="question2">
                 <input type="submit" value="Submit Quiz">
             </form>
         </div>
@@ -102,7 +239,7 @@
 
     <!-- Footer -->
     <div id="footer">
-        <p>
+        <p class="whiteP">
             &copy; 2023 The Fascinating World of Octopuses. All rights reserved.
             <!-- HTML entities for special characters -->
             Fun Fact: The plural of "Octopus" can be both "Octopuses" &amp; "Octopi" &lt;3
