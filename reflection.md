@@ -1,0 +1,3 @@
+Project 3 - Ocotpus 
+
+This project went fairly well. I began with chat gpt, giving it the starting code, the image, and then describing certain details of the image. What it gave me was a good start that I could then go in and add inline style to fix a lot of spacing, fonts, and color issues. My biggest issues besides trying to match colors was in the quiz section where I had to align some elements on the left and some on the right and still have one on top of the other. I had chat gpt realign the elements and I then fixed sizing and spacing. I also struggled to make the half underline under "INTRODUCTION" which just took time and experimentation. 

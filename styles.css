@@ -1,5 +1,6 @@
+/* External CSS File */
 
-/* Set the background color for the body */
+/* Set the background color, font, and spacing for the body */
 body {
     background-color: lightblue;
     font-family: Arial, sans-serif;
@@ -17,10 +18,12 @@ h2, h3, h4, h5, h6 {
     color: rgb(13, 132, 188);
 }
 
+/* Style the h1 heading to be purple */
 p {
     color: rgb(95, 2, 95);
 }
 
+/* Certain paragraphs should be white */
 p.whiteP {
     color: white;
 }
@@ -30,11 +33,13 @@ ul li {
     color: rgb(13, 132, 188);
 }
 
+/* Ordered list items should be purple */
 ol li {
     color: rgb(95, 2, 95);
     padding: 6px;
 }
 
+/* Table header should be white */
 th {
     color: white;
 }

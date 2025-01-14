@@ -8,6 +8,7 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Internal CSS -->
     <style>
         /* Style the header section with a gradient background and center the h1 */
         #header {
@@ -15,10 +16,12 @@
             color: white;
             text-align: center;
             padding: 20px;
+            padding-top: 30px;
             border-radius: 15px;
             margin: 20px;
         }
 
+        /* Set the font style and shadow fro h1 */
         #header h1 {
             font-size: 2.5em;
             margin: 0;
@@ -26,7 +29,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        /* Style the main content area with a white background */
+        /* Style the main content area with a white background, correct spacing, and round corners */
         #main-content {
             background-color: white;
             padding: 20px;
@@ -54,11 +57,13 @@
             align-items: flex-start;
         }
 
+        /* The quiz section title should be upper case*/
         #quiz-section h2 {
             text-transform: uppercase;
             margin-bottom: 10px;
         }
 
+        /* Give the image a border, width, and margin */
         #quiz-section img {
             border: 5px solid purple;
             width: 100px;
@@ -69,12 +74,14 @@
             margin-bottom: 50px;
         }
 
+        /* Align the form elements to the right */
         #quiz-section form {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
 
+        /* Style the quiz questions */
         #quiz-section label {
             color: rgb(18, 18, 142);
             font-weight: bold;
@@ -82,14 +89,16 @@
             margin-bottom: 10px;
         }
 
+        /* Style the quiz input fields */
         #quiz-section input[type="text"] {
             border: 2px solid rgb(18, 18, 142);
             border-radius: 5px;
             padding: 5px;
-            width: 200px;
+            width: 95%;
             margin-top: 5px;
         }
 
+        /* Style the quiz submit button */
         #quiz-section input[type="submit"] {
             margin-top: 15px;
             padding: 10px 20px;
@@ -100,6 +109,7 @@
             cursor: pointer;
         }
 
+        /* Change the background color of the submit button on hover */
         #quiz-section input[type="submit"]:hover {
             background-color: rgb(79, 118, 143);
         }
@@ -109,25 +119,28 @@
             margin: 20px;
         }
 
+        /* Align the table */
         #species-table table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
         }
 
-        #species-table th,
-        #species-table td {
+        /* Style the table borders */
+        #species-table th, #species-table td {
             padding: 10px;
             border: 1px solid black;
         }
 
-        #species-table tr:nth-child(odd) {
-            background-color: white;
-        }
-
+        /* Color the first row */
         #species-table tr:first-child {
             background-color: gray;
             font-weight: bold;
+        }
+
+        /* Color the third row */
+        #species-table tr:nth-child(odd) {
+            background-color: white;
         }
 
         /* Style the footer section */
@@ -159,7 +172,8 @@
     <div id="main-content">
 
         <!-- Introduction -->
-        <h2 style="text-transform: uppercase;">Introduction</h2>
+        <!-- Add a small half underline to the header -->
+        <h2 style="text-transform: uppercase; border-bottom: 3px solid #add8e6; width: 3%; padding-bottom: 10px;">Introduction</h2>
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
@@ -191,8 +205,9 @@
         </ol>
 
         <!-- External Resources -->
-        <h6>External Resources</h6>
-        <p>
+        <!-- Shorten spacing between h6 and p -->
+        <h6 style="margin-bottom: 5px;">External Resources</h6>
+        <p style="margin-top: 10px;">
             For more information, visit these websites:
             <a href="https://www.oceana.org/" target="_blank">Oceana</a> |
             <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
@@ -217,7 +232,7 @@
 
     <!-- Table -->
     <div id="species-table">
-        <h2>Common Octopus Species</h2>
+        <h2 >Common Octopus Species</h2>
         <table border="1">
             <tr>
                 <th>Species</th>
